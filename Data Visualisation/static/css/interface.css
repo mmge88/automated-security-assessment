@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background-color: #F4F6F7;
+
+  background-image: url('/static/images/122.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 60% 100%;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+  width: 150px;
+}
+
+h1 {
+  margin-left: 140px;
+}
+
+.circle {
+  font-size: 60px;
+  color: #fff;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+
+  padding: 3px;
+  display: block;
+}
+
+/* container of circle and h4 text */
+.endpoint {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+}
+
+/* define the position of circles and texts */
+#security {
+  top: 25%;
+  left: 5%
+}
+
+#audio {
+  top: 65%;
+  left: 5%
+}
+
+#light {
+  top: 45%;
+  left: 20%;
+}
+
+#fire {
+  top: 25%;
+  left: 35%
+}
+
+#hvac {
+  top: 65%;
+  left: 35%
+}
+
+/* define circle's color */
+#light .circle {
+  background-color: #FF4500;
+}
+
+#audio .circle {
+  background-color: DodgerBlue;
+}
+
+#security .circle {
+  background-color: #FFD700;
+}
+
+#hvac .circle {
+  background-color: #DA70D6;
+}
+
+#fire .circle {
+  background-color: LightSeaGreen;
+}
