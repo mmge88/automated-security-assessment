@@ -1,0 +1,9 @@
+cvssV2_obtainOtherPrivilege--- 144.47006464004517 seconds ---
+{'max_depth': 300, 'num_leaves': 500}	accuracy score: 0.967934681759139	f1 score: 0.9692657939669893	precision score: 0.9432943294329433ecall score: 0.9967078791425854
+
+cvssV2_obtainAllPrivilege--- 136.3602283000946 seconds ---
+{'max_depth': 300, 'num_leaves': 500}	accuracy score: 0.9785562403142682	f1 score: 0.9789387986265974	precision score: 0.9616802281104389ecall score: 0.9968281430219147
+
+cvssV2_obtainUserPrivilege--- 141.80144047737122 seconds ---
+{'max_depth': 300, 'num_leaves': 500}	accuracy score: 0.9878479581743677	f1 score: 0.9879416713404374	precision score: 0.9807906458797327ecall score: 0.9951977401129943
+
