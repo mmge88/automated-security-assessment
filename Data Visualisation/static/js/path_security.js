@@ -1,44 +1,54 @@
-anychart.onDocumentReady(function() {
+anychart.onDocumentReady(function () {
 
   // create data
-  var data= {
-    "nodes":[
-          // hardwares
+  var data = {
+    "nodes": [
+      // hardwares
       {
-          id:'entrance_guard', height: '30', fill: ' #3498DB', 
-          x:100,y:100,
-          description: 'Basecore: 12.50'
+        id: 'entrance_guard', height: '30', fill: ' #3498DB',
+        x: 100, y: 100,
+        description: 'Basecore: 12.50'
       },
       {
-          id:'surveillance', height: '30',  fill: '#DC7633',
-          x:400,y:0,
-          description: 'Basecore: 21.10'
+        id: 'surveillance', height: '30', fill: '#DC7633',
+        x: 400, y: 0,
+        description: 'Basecore: 25.80'
       },
       {
-          id:'alarm', height: '30', fill:'#AF7AC5',
-          x:100,y:-100,
-          description: 'Basecore: 18.30'
+        id: 'alarm', height: '30', fill: '#AF7AC5',
+        x: 100, y: -100,
+        description: 'Basecore: 21.10'
       },
       {
-        id:'computer', height: '30', fill:'red',
-        x:600,y:0,
+        id: 'door_window_alarm_sensor0', height: '30', fill: '#cc1964',
+        x: 100, y: -300,
+        description: 'Basecore: 10.00.'
+      },
+      {
+        id: 'door_window_alarm_sensor1', height: '30', fill: '#cc1964',
+        x: 0, y: -300,
+        description: 'Basecore: 10.00.'
+      },
+      {
+        id: 'computer', height: '30', fill: 'red',
+        x: 600, y: 0,
         description: 'Attacker'
-    },
+      },
     ],
 
-    "edges":[
-      {from: 'surveillance', to:'entrance_guard'},
-      {from: 'surveillance', to: 'alarm', stroke:  {color: "red"}},
-
-      {from: 'alarm', to: 'entrance_guard', stroke:  {color: "red"}},
-      {from: 'alarm', to: 'surveillance'},
-
-      {from: 'computer', to: 'surveillance', stroke:  {color: "red"}},
-    ]}
+    "edges": [
+      { from: 'surveillance', to: 'entrance_guard' , stroke: { color: "red" }},
+      { from: 'door_window_alarm_sensor1', to: 'alarm' , stroke: { color: "red" }},
+      { from: 'door_window_alarm_sensor0', to: 'door_window_alarm_sensor1' , stroke: { color: "red" } },
+      { from: 'alarm', to: 'entrance_guard'},
+      { from: 'alarm', to: 'surveillance', stroke: { color: "red" }},
+      { from: 'computer', to: 'door_window_alarm_sensor0', stroke: { color: "red" } },
+    ]
+  }
 
   var chart = anychart.graph(data);
 
-  chart.title("The Most risk Path in Security Systerm(Maximum CVSS Base Score: 59.40)");
+  chart.title("The Most risk Path in Security Systerm(Maximum CVSS Base Score: 80.20)");
 
   // configure nodes
   chart.nodes().labels().enabled(true);

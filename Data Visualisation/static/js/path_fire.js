@@ -6,7 +6,7 @@ anychart.onDocumentReady(function() {
       			// hardwares
         {
             id:'CO_sensor', height: '30', fill: '#2ECC71', 
-            description: 'Basecore: 16.40'
+            description: 'Basecore: 15.00'
         },
         {
             id:'fire_alarm', height: '30',  fill: '#F5B041', 
@@ -14,8 +14,12 @@ anychart.onDocumentReady(function() {
         },
         {
             id:'thermometer', height: '30', fill:'#3498DB',
-            description: 'Basecore: 16.40'
+            description: 'Basecore: 9.70'
         },
+        {
+          id:'smoke_sensor', height: '30', fill:'#1b34c5',
+          description: 'Basecore: 12.50'
+      },
     
         // attackers
         {
@@ -27,6 +31,7 @@ anychart.onDocumentReady(function() {
       "edges":[
         {from: 'CO_sensor', to:'fire_alarm', stroke:  {color: "red"}},
         {from: 'thermometer', to:'fire_alarm'},
+        {from: 'smoke_sensor', to:'fire_alarm'},
         {from: 'computer', to: 'CO_sensor', stroke:  {color: "red"}},
       ]}
   

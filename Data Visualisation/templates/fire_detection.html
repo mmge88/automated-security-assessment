@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -13,64 +14,84 @@
 <![endif]-->
   <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" rel="stylesheet" type="text/css">
-  <style>html, body, #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .button {
-    background-color: #212F3D;
-    border: none;
-    color: white;
-    padding: 20px 34px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    opacity: 0.7;
-    position: absolute;
-    bottom: 20%;
-    right:5%;
-  }
-  .circle {
-    background-color: #2ECC71;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 30%;
-    left:2%;
+  <style>
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
-  .circle1 {
-    background-color: #F5B041;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 38%;
-    left:2%;
+
+    .button {
+      background-color: #212F3D;
+      border: none;
+      color: white;
+      padding: 20px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      opacity: 0.7;
+      position: absolute;
+      bottom: 20%;
+      right: 5%;
     }
-  .circle2 {
-    background-color: #3498DB;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 46%;
-    left:2%;
+
+    .circle {
+      background-color: #2ECC71;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 30%;
+      left: 2%;
+    }
+
+    .circle1 {
+      background-color: #F5B041;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 38%;
+      left: 2%;
+    }
+
+    .circle2 {
+      background-color: #3498DB;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 46%;
+      left: 2%;
+    }
+
+    .circle3 {
+      background-color: #1b34c5;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 54%;
+      left: 2%;
     }
   </style>
- </head>
- <body>
+</head>
+
+<body>
   <div id="container"></div>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-graph.min.js"></script>
@@ -81,5 +102,7 @@
   <div class="circle"><span style="margin-left:40px">CO_sensor</span></div>
   <div class="circle1"><span style="margin-left:40px">Fire_alarm</span></div>
   <div class="circle2"><span style="margin-left:40px">Thermometer</span></div>
- </body>
+  <div class="circle3"><span style="margin-left:40px; padding-right: 10px;">Smoke_sensor</span></div>
+</body>
+
 </html>

@@ -32,6 +32,14 @@ anychart.onDocumentReady(function() {
             id:'air_conditioner', height: '30', fill:'#873600', 
             description: 'Basecore: 7.20'
         },
+        {
+            id:'window_sensor0', height: '30', fill:'#0b5a35', 
+            description: 'Basecore: 10.20'
+        },
+        {
+            id:'window_sensor1', height: '30', fill:'#0b5a35', 
+            description: 'Basecore: 10.20'
+        },
       ],
   
       "edges":[
@@ -46,6 +54,13 @@ anychart.onDocumentReady(function() {
 
         {from: 'occupancy_sensor', to: 'heater'},
         {from: 'occupancy_sensor', to: 'air_conditioner'},
+
+        {from: 'window_sensor0', to: 'window_sensor1'},
+        {from: 'window_sensor0', to: 'heater'},
+        {from: 'window_sensor0', to: 'air_conditioner'},
+
+        {from: 'window_sensor1', to: 'heater'},
+        {from: 'window_sensor1', to: 'air_conditioner'},
       ]}
   
     var chart = anychart.graph(data);

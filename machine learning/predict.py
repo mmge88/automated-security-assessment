@@ -18,7 +18,7 @@ from imblearn.over_sampling import RandomOverSampler
 #loading file
 # 'all_clean.csv' download from 'https://drive.google.com/file/d/1CvWDTGYrirHTlG4HBJzTlQc6gAb79yqH/view?usp=sharing'
 df = pd.read_csv('all_clean.csv',index_col=[0],low_memory=False)
-df2 = pd.read_csv('/Device related/Smart TV.csv',index_col=[0],low_memory=False)
+df2 = pd.read_csv('machine learning\Device related\Speaker.csv',index_col=[0],low_memory=False)
 
 #difind labels
 privilege_lebels = ['cvssV2_obtainOtherPrivilege', 'cvssV2_obtainAllPrivilege', 'cvssV2_obtainUserPrivilege']
@@ -131,7 +131,7 @@ accessComplexity = pd.DataFrame({'cvssV2_accessComplexity':y_pred_Complexity},in
 y_authentication = df['cvssV2_authentication']
 ros = RandomOverSampler(random_state=42)
 X_ros_train_authentication, y_ros_train_authentication = ros.fit_resample(X_train_transformed, y_authentication)
-clf = LGBMClassifier(objective='multiclass', num_leaves=300, max_depth=500,
+clf = LGBMClassifier(objective='multiclass', num_leaves=100, max_depth=300,
                      class_weight='balanced', random_state=42)
 clf.fit(X_ros_train_authentication, y_ros_train_authentication)
 y_pred_authentication = clf.predict(X_test_transformed)
@@ -186,4 +186,4 @@ drop = df2.drop(['cvssV2_version','cvssV2_vectorString','cvssV2_accessVector', '
           'cvssV3_userInteraction','cvssV3_scope','cvssV3_impactScore','cvssV3_baseSeverity','cvssV3_exploitabilityScore',
          'cvssV3_impactScore','cvssV2_acInsufInfo'], axis = 1) 
 final_result = pd.concat([drop,result], axis=1)
-final_result.to_csv("/predicted result/Smart TV.csv",index = False)
+final_result.to_csv("machine learning\predicted result\Speaker.csv",index = False)

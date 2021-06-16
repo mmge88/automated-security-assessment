@@ -3,15 +3,15 @@
     <head>
         <title>Smart Building System</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="static/css/interface.css">
     </head>
     <body>
-        <img src="static/images/images.png" class="logo">
+        <!-- <img src="static/images/images.png" class="logo"> -->
         <h1>Smart Building System</h1>
 
         <div class="endpoint" id="light">
-            <a href="/light" class="circle"><i class="fa fa-lightbulb-o"></i></a>
+            <a href="/light" class="circle"><i class="fa fa-lightbulb"></i></a>
             <h4>Lighting</h4>
         </div>
 
@@ -21,12 +21,12 @@
         </div>
 
         <div class="endpoint" id="security">
-            <a href="/security" class="circle"><i class="fa fa-shield"></i></a>
+            <a href="/security" class="circle"><i class="fas fa-shield-alt"></i></a>
             <h4>Security</h4>
         </div>
 
         <div class="endpoint" id="hvac">
-            <a href="/hvac" class="circle"><i class="fa fa-thermometer-2"></i></a>
+            <a href="/hvac" class="circle"><i class="fas fa-thermometer-three-quarters"></i></a>
             <h4>HVAC</h4>
         </div>
 
@@ -34,5 +34,26 @@
             <a href="/fire_detection" class="circle"><i class="fa fa-fire"></i></a>
             <h4>Fire Detection</h4>
         </div>
+
+        <div class="endpoint" id="resources">
+            <a href="/resources" class="circle"><i class="fa fa-tags"></i></a>
+            <h4>Resources Tracking</h4>
+        </div>
+
+        <div class="endpoint" id="maintenance">
+            <a href="/maintenance" class="circle"><i class="fas fa-tools"></i></a>
+            <h4>Maintenance</h4>
+        </div>
+
+        <div class="endpoint" id="combined_security">
+            <a href="/combined_security" class="circle"><i class="fas fa-project-diagram"></i></a>
+            <h4>Combined Security</h4>
+        </div>
+
+        <div class="endpoint" id="combined_ALFH">
+            <a href="/combined_ALFH" class="circle"><i class="fas fa-stream"></i></a>
+            <h4>Combined ALFH</h4>
+        </div>
+        
     </body>
 </html>

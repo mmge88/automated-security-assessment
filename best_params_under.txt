@@ -1,0 +1,18 @@
+cvssV2_confidentialityImpact--- 394.00402545928955 seconds ---
+{'max_depth': 200, 'num_leaves': 500}	accuracy score: 0.8909707948950815	f1_score(macro): 0.8907563551917844	f1_score(weight): 0.8904985396389147	precision_score(macro)0.8908268343285132	precision_score(weighted)0.8905221117547858recall_score(macro): 0.891177148713184	recall_score(weighted): 0.8909707948950815
+
+cvssV2_integrityImpact--- 407.05496311187744 seconds ---
+{'max_depth': 100, 'num_leaves': 500}	accuracy score: 0.9144833089506583	f1_score(macro): 0.9137993716455485	f1_score(weight): 0.9140006681716484	precision_score(macro)0.9145775118003869	precision_score(weighted)0.9147491820915311recall_score(macro): 0.9142601571101056	recall_score(weighted): 0.9144833089506583
+
+cvssV2_availabilityImpact--- 317.598788022995 seconds ---
+{'max_depth': 100, 'num_leaves': 100}	accuracy score: 0.835813519301521	f1_score(macro): 0.8347200060079142	f1_score(weight): 0.8343803254872099	precision_score(macro)0.8346772394161269	precision_score(weighted)0.8344469629742243recall_score(macro): 0.8362685794326788	recall_score(weighted): 0.835813519301521
+
+cvssV2_accessVector--- 461.2447054386139 seconds ---
+{'max_depth': 200, 'num_leaves': 500}	accuracy score: 0.9885961027457927	f1_score(macro): 0.9885770466373965	f1_score(weight): 0.9885750527452359	precision_score(macro)0.9886693712412006	precision_score(weighted)0.9887146261874937recall_score(macro): 0.9886450098673181	recall_score(weighted): 0.9885961027457927
+
+cvssV2_accessComplexity--- 401.2315526008606 seconds ---
+{'max_depth': 300, 'num_leaves': 500}	accuracy score: 0.9126051089945403	f1_score(macro): 0.9123935613009331	f1_score(weight): 0.9121522404115483	precision_score(macro)0.9128766553965995	precision_score(weighted)0.912912094791556recall_score(macro): 0.9131139106779428	recall_score(weighted): 0.9126051089945403
+
+cvssV2_authentication--- 389.5395681858063 seconds ---
+{'max_depth': 100, 'num_leaves': 300}	accuracy score: 0.9741208585344966	f1_score(macro): 0.9740983742151067	f1_score(weight): 0.9741029742494821	precision_score(macro)0.9744688831275568	precision_score(weighted)0.9744573762837955recall_score(macro): 0.9741002858033937	recall_score(weighted): 0.9741208585344966
+

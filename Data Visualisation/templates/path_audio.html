@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -13,86 +14,108 @@
 <![endif]-->
   <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" rel="stylesheet" type="text/css">
-  <style>html, body, #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  <style>
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
+
     .circle {
-    background-color: #D35400;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 30%;
-    left:2%;
-  }
-.circle1 {
-    background-color: #B7950B;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 38%;
-    left:2%;
-  }
-.circle2 {
-    background-color: #9B59B6;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 46%;
-    left:2%;
-  }
-.circle3 {
-    background-color: #34495E;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 54%;
-    left:2%;
-  }
-  .circle4 {
-    background-color: red;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    top: 62%;
-    left:2%;
-  }
-  .button {
-    background-color: #212F3D;
-    border: none;
-    color: white;
-    padding: 20px 34px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    opacity: 0.7;
-    position: absolute;
-    bottom: 8%;
-    left: 5%;
-  }
+      background-color: #D35400;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 30%;
+      left: 2%;
+    }
+
+    .circle1 {
+      background-color: #B7950B;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 38%;
+      left: 2%;
+    }
+
+    .circle2 {
+      background-color: #9B59B6;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 46%;
+      left: 2%;
+    }
+
+    .circle3 {
+      background-color: #34495E;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 54%;
+      left: 2%;
+    }
+
+    .circle4 {
+      background-color: red;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 62%;
+      left: 2%;
+    }
+
+    .circle5 {
+      background-color: #2b7e47;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 70%;
+      left: 2%;
+    }
+
+    .button {
+      background-color: #212F3D;
+      border: none;
+      color: white;
+      padding: 20px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      opacity: 0.7;
+      position: absolute;
+      bottom: 8%;
+      left: 5%;
+    }
   </style>
- </head>
- <body>
+</head>
+
+<body>
   <div id="container"></div>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-core.min.js"></script>
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-graph.min.js"></script>
@@ -104,6 +127,8 @@
   <div class="circle2"><span style="margin-left:40px">Brightness_sensor</span></div>
   <div class="circle3"><span style="margin-left:40px">Speaker</span></div>
   <div class="circle4"><span style="margin-left:40px">Attacker</span></div>
-  <button class="button button2">attacker -> brightness_sensor -> projector -> speaker</button>
- </body>
+  <div class="circle5"><span style="margin-left:40px; padding-right: 20px;">Media_player</span></div>
+  <button class="button button2">attacker -> meida_player -> projector -> speaker</button>
+</body>
+
 </html>

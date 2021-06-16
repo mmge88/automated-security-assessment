@@ -52,6 +52,29 @@
     top: 46%;
     left:2%;
   }
+  .circle3 {
+    background-color: #cc1964;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 54%;
+    left:2%;
+  }
+  .circle4 {
+      background-color: red;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 62%;
+      left: 2%;
+    }
+
   .button {
         background-color: #212F3D;
         border: none;
@@ -80,6 +103,8 @@
   <div class="circle"><span style="margin-left:40px">Entrance_guard</span></div>
   <div class="circle1"><span style="margin-left:40px">Surveillance</span></div>
   <div class="circle2"><span style="margin-left:40px">Alarm</span></div>
-  <button class="button button2">attacker -> surveillance -> alarm -> entrance_guard</button>
+  <div class="circle3"><span style="margin-left:40px; padding-right: 10px;">Door_window_alarm_sensor</span></div>
+  <div class="circle4"><span style="margin-left:40px">Attacker</span></div>
+  <button class="button button2">attacker -> Door_window_alarm_sensor0 -> Door_window_alarm_sensor1 -> alarm -> Surveillance -> entrance_guard</button>
  </body>
 </html>

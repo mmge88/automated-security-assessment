@@ -20,12 +20,17 @@ anychart.onDocumentReady(function() {
             id:'speaker', height: '30', fill:'#34495E', 
             description: 'Basecore: 7.80'
         },
+        {
+          id:'media_player', height: '30', fill:'#2b7e47', 
+          description: 'Basecore: 9.30'
+      },
       ],
   
       "edges":[
-        {from: 'brightness_sensor', to:'projector'},
+        {from: 'media_player', to:'projector'},
         {from: 'projector', to:'speaker'},
-        {from: 'brightness_sensor', to:'TV'},
+        {from: 'media_player', to:'TV'},
+        {from: 'media_player', to:'brightness_sensor'},
         {from: 'TV', to:'speaker'},
       ]}
   

@@ -49,13 +49,8 @@ h1 {
   left: 5%
 }
 
-#audio {
-  top: 65%;
-  left: 5%
-}
-
 #light {
-  top: 45%;
+  top: 25%;
   left: 20%;
 }
 
@@ -64,7 +59,32 @@ h1 {
   left: 35%
 }
 
+#audio {
+  top: 45%;
+  left: 5%
+}
+
 #hvac {
+  top: 45%;
+  left: 20%
+}
+
+#resources {
+  top: 45%;
+  left: 35%
+}
+
+#maintenance {
+  top: 65%;
+  left: 5%
+}
+
+#combined_security {
+  top: 65%;
+  left: 20%
+}
+
+#combined_ALFH {
   top: 65%;
   left: 35%
 }
@@ -88,4 +108,20 @@ h1 {
 
 #fire .circle {
   background-color: LightSeaGreen;
+}
+
+#resources .circle {
+  background-color: rgb(77, 75, 235);
+}
+
+#maintenance .circle {
+  background-color: rgb(150, 40, 85);
+}
+
+#combined_security .circle {
+  background-color: rgb(132, 212, 122);
+}
+
+#combined_ALFH .circle {
+  background-color: rgb(206, 122, 53);
 }
