@@ -4,6 +4,8 @@ Created by Mengmeng Ge
 
 Modified by Moyang Feng to adapt to the CREST#9 project
 
+Further updated by Xuanyu Duan.
+
 This project builds a graphical security model for IoT networks and performs security assessments on impact, risk, probability of attack and CVSS base score. 
 Vulnerabilities are based on CVSS V2 metrics from the National Vulnerability Database. 
 
