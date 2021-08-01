@@ -99,7 +99,7 @@ def createLighting(vuls):
     # create a light controller
     light_controller = computer('light_controller')
     light_controller.subnet.append('wifi')
-    v30 = vuls[1][1]
+    v30 = vuls[2][1]
     v30.createVuls(light_controller)
     v30.thresholdPri(light_controller, 1)
     v30.terminalPri(light_controller, 1)
