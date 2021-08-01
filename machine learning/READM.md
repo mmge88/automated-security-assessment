@@ -1,4 +1,7 @@
 # Machine learing
+
+# Originally created by Xin Chen and modifed by Xuanyu Duan.
+
 ## 1. Data processing 
 The training data set: 
 <img width="943" alt="Screen Shot 2021-02-09 at 9 30 40 pm" src="https://user-images.githubusercontent.com/74897092/107354841-951f9d00-6b1e-11eb-9fe0-b8b6a50fbaf8.png">
